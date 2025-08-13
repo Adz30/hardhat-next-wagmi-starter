@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hardhat + Next.js + Wagmi Starter
+
+A starter project combining **Hardhat**, **Next.js**, and **Wagmi** for building Ethereum dApps. This setup includes a smart contract backend and a React frontend ready to connect to wallets and the blockchain.
+
+---
+
+## Features
+
+- Ethereum smart contract development with **Hardhat**
+- Frontend built with **Next.js** and **React**
+- Wallet connection using **Wagmi**
+- Example ERC20 token contract
+- Scripts for deploying contracts
+- Preconfigured testing setup
+
+---
+
+## Tech Stack
+
+- **Backend:** Hardhat, Solidity, Ethers.js
+- **Frontend:** Next.js, React, Wagmi, Tailwind CSS
+- **Testing:** Mocha, Chai
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+git clone https://github.com/Adz30/hardhat-next-wagmi-starter.git
+cd hardhat-next-wagmi-starter
 
-```bash
+###2. Install dependencies
+
+Backend:
+cd backend
+npm install
+
+Frontend:
+cd ../frontend
+npm install
+
+###3. Run the project
+Deploy contracts (Hardhat):
+cd backend
+npx hardhat run scripts/Deploy.js --network localhost
+
+Run frontend:
+cd ../frontend
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
